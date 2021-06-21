@@ -1,11 +1,10 @@
 import React from 'react';
 import Text from '../../foundation/Text';
-import { Logo } from '../../../theme/Logo/Logo';
-import { MenuWrapper } from './styles/MenuWrapper';
-import { Button } from '../Button';
+import Logo from '../../../theme/Logo/Logo';
+import MenuWrapper from './styles/MenuWrapper';
+import Button from '../Button';
 
 export default function Menu() {
-
   const links = [
     {
       texto: 'Home',
@@ -19,7 +18,7 @@ export default function Menu() {
       texto: 'Sobre',
       url: '/sobre',
     },
-  ]
+  ];
 
   return (
     <MenuWrapper>
@@ -46,5 +45,5 @@ export default function Menu() {
         </Button>
       </MenuWrapper.RightSide>
     </MenuWrapper>
-  )
+  );
 }
